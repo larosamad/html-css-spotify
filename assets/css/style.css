@@ -14,8 +14,9 @@ body{
 
 
 .blue{
-    background-color: aqua;
+    background-color: #273142;
     width:83vw;
+    color: white;
 }
 
 
@@ -227,6 +228,18 @@ footer{
     background-color: #282828;
     color: white;
     text-transform: uppercase;
+}
+
+.top-list{
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    text-transform: uppercase;
+    
+}
+
+.top-list div{
+    padding: 0 5px;
 }
 
 
