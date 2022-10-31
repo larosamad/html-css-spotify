@@ -2,4 +2,108 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+
+body{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+footer{
+    background-color: #282828;
+    color: white;
+    display: fixed;
+    bottom: 0;
+    height: 15vh;
+}
+
+.side-menu{
+    background-color: #382424;
+    color: white;
+    width: 15vw;
+    height: 85vh;
+}
+
+#logo{
+    padding: 1rem;
+}
+
+#logo-small{
+    display: none;
+}
+
+.top-side-menu div img{
+    width: 30px;
+    margin: 5px 10px;
+}
+
+.top-side-menu span, .top-side-menu img{
+    vertical-align: middle;
+}
+
+.playlist{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#plus{
+    font-size: 2.4rem;
+    padding: 1px 10px;
+    font-weight: bolder;
+}
+
+#create-pl button, span{
+    vertical-align: middle;
+}
+
+#create-pl{
+    margin: 10px 0;
+}
+
+.playlist-list li{
+    line-height: 30px;
+    overflow: hidden;
+}
+
+.side-menu{
+    justify-content:space-between;
+    overflow: auto;
+}
+
+.side-menu hr{
+    width: 90%;
+    margin: auto;
+}
+
+#install img, span{
+    vertical-align: middle;
+}
+
+#install img, #profile img{
+    margin: 5px 10px;
+}
+
+
+#profile-pic img{
+    background-color: grey;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#profile-pic img, span{
+    vertical-align: middle;
+}
+
+#profile-pic{
+    margin: 5px 0;
 }
