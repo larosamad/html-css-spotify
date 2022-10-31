@@ -12,7 +12,7 @@
 
 </head>
 <body>
-    <main>
+    <main class="flex">
         <section class="side-menu flex column">
             <div class="top-side-menu">
                 <figure id="logo"><img src="assets/img/logo.svg" alt="Logo" width="80%"></figure>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="playlist">
-                    <h2>PLAYLIST</h2>
+                    <h3>PLAYLIST</h3>
                     <div id="create-pl"><button id="plus">+</button>
                     <span>Crea playlist</span></div>
                     <div class="playlist-list">
@@ -56,13 +56,54 @@
             </div>
         </section>
 
-        <section>
-
+        <section class="blue">
+            <div class="upgrade flex">
+                <button>Effettua l'upgrade</button>
+                </div>
         </section>
     </main>
 
     <footer>
-        lorem
+        <div class="footer flex">
+            <div class="playing flex">
+                <figure>
+                    <img src="assets/img/sinister.jpeg" alt="album cover">
+                </figure>
+
+                <div class="text-playing">
+                    <h3>Sinister</h3>
+                <p>Brano nome</p>
+                </div>
+
+                <div class="icons-playing flex">
+                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-regular fa-folder"></i></div>
+                </div>
+            </div>
+
+            <div class="commands flex column">
+                <div class="commands-icons flex">
+                    <div><i class="fa-solid fa-shuffle"></i></div>
+                    <div><i class="fa-solid fa-backward-step"></i></div>
+                    <div><i class="fa-regular fa-circle-play"></i></div>
+                    <div><i class="fa-solid fa-forward-step"></i></div>
+                    <div><i class="fa-solid fa-rotate-left"></i></div>
+                </div>
+                
+                <div class="play-bar flex">
+                    <span>0:25</span>
+                    <div id="bar"></div>
+                    <span>4:35</span>
+                </div>
+            </div>
+
+            <div class="volume-etc flex">
+                <div><i class="fa-solid fa-list"></i></div>
+                <div><i class="fa-solid fa-desktop"></i></div>
+                <div><i class="fa-solid fa-volume-high"></i></div> 
+                <div class="volume-bar"></div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
