@@ -76,6 +76,10 @@ footer{
     display: none;
 }
 
+.top-side-menu{
+    overflow: auto;
+}
+
 .top-side-menu div img{
     width: 30px;
     margin: 5px 10px;
@@ -110,6 +114,10 @@ footer{
     line-height: 30px;
 }
 
+.playlist ul{
+    overflow: auto;
+}
+
 .playlist{
     margin: 10px 15px 0 15px;
 }
@@ -129,7 +137,6 @@ footer{
 #install, #profile{
     margin: 0.5rem;
 }
-
 
 #profile-pic img{
     background-color: grey;
@@ -334,7 +341,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 372px) {
+@media screen and (max-width: 413px) {
     .side-menu{
         width: 15vh;
     }
@@ -372,6 +379,11 @@ footer{
         display: none;
     }
 
+    .bottom-side-menu{
+        position: sticky;
+        bottom: 0;
+        z-index: 25;
+    }
     .bottom-side-menu img{
         width: 5vw;
     }
