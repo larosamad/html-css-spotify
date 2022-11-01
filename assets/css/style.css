@@ -7,10 +7,11 @@
     box-sizing: border-box;
     list-style: none;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 18px;
 }
 
-
+html{
+    font-size: 120%;
+}
 
 body{
     height: 100vh;
@@ -275,6 +276,27 @@ footer{
     border: 10px transparent;
     border-left: none transparent;
     border-style: inset;
+}
+
+.play-hover{
+    display: none;
+}
+
+.card figure{
+    position: relative;
+}
+
+.card figure:hover .play-hover{
+    display: block;
+    position: absolute;
+    top: 35%;
+    right: 35%;
+    font-size: 4vw;
+}
+
+.card figure:hover img{
+    transition: all 0.5s linear;
+    filter: brightness(50%);
 }
 
 .circle figure img{
