@@ -10,6 +10,7 @@
 body{
     height: 100vh;
     width: 100vw;
+    font-size: smaller;
 }
 
 
@@ -17,6 +18,7 @@ body{
     background-color: #273142;
     width:83vw;
     color: white;
+    overflow: auto;
 }
 
 
@@ -37,6 +39,10 @@ body{
 
 }
 
+main{
+    height: 85vh;
+}
+
 footer{
     background-color: #282828;
     color: white;
@@ -46,14 +52,14 @@ footer{
     height: 15vh;
     z-index: 100;
     position: fixed;
-    overflow: visible;
 }
 
 .side-menu{
     background-color: #000000;
     color: white;
     width: 17vw;
-    height: 85vh;
+    overflow: hidden;
+    justify-content:space-between;
 }
 
 #logo{
@@ -92,27 +98,19 @@ footer{
 
 .playlist-list li{
     line-height: 30px;
-    overflow: hidden;
 }
 
 .playlist{
     margin: 10px 15px 0 15px;
-    
 }
 
-.side-menu{
-    justify-content:space-between;
-    overflow: auto;
-}
+
 
 .side-menu hr{
     width: 90%;
     margin: auto;
 }
 
-.profile{
-    position: sticky;
-}
 
 #install img, span{
     vertical-align: middle;
@@ -223,6 +221,7 @@ footer{
 .upgrade button{
     border-radius: 20px;
     padding: 0 30px;
+    margin-right: 20px;
     height: 70%;
     border: 1px solid white;
     background-color: #282828;
@@ -231,10 +230,10 @@ footer{
 }
 
 .top-list{
-    align-items: center;
     justify-content: center;
     height: 50px;
     text-transform: uppercase;
+    margin-top: 20px;
     
 }
 
@@ -242,8 +241,63 @@ footer{
     padding: 0 5px;
 }
 
+.recently-played {
+    padding: 5px 20px 40px 20px;
+}
 
-@media screen and (max-width: 425px) {
+.recently-played h2{
+    padding-bottom: 15px;
+}
+
+.recently-played-albums {
+    flex-wrap: wrap;
+}
+
+.card h4, .card h5{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    flex-basis: calc(100% / 6);
+}
+
+.card img{
+    width: 100%;
+    min-width: 80%;
+    border: 10px transparent;
+    border-left: none transparent;
+    border-style: inset;
+}
+
+.circle figure img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 592px){
+    .side-menu{
+        width: 30vh;
+    }
+
+    .blue{
+        width: 70vh;
+    }
+    
+    .card{
+        flex-basis: calc(100% / 4);
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .side-menu{
+        width: 15vh;
+    }
+
+    .blue{
+        width: 85vh;
+    }
     /* body{
         font-size: 0.7rem;
     }
@@ -285,5 +339,9 @@ footer{
 
     hr{
         display: none;
+    }
+
+    .card{
+        flex-basis: calc(100% / 2);
     }
 }
