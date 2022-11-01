@@ -85,6 +85,10 @@ footer{
     vertical-align: middle;
 }
 
+.top-side-menu-icons:hover{
+    border-left: lightgreen 5px inset;
+}
+
 
 #plus{
     font-size: 2.4rem;
@@ -129,8 +133,7 @@ footer{
 
 #profile-pic img{
     background-color: grey;
-    object-fit: contain;
-    border-radius: 50%;
+    clip-path: circle();
 }
 
 #profile-pic img, span{
@@ -217,6 +220,7 @@ footer{
 
 .upgrade{
     position: sticky;
+    z-index: 50;
     top: 0;
     background-color: #080b125d;
     color: white;
