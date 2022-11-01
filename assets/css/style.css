@@ -89,6 +89,10 @@ footer{
     vertical-align: middle;
 }
 
+.top-side-menu-icons{
+    border-left: transparent 5px inset;
+}
+
 .top-side-menu-icons:hover{
     border-left: lightgreen 5px inset;
 }
@@ -255,13 +259,17 @@ footer{
 .top-list{
     justify-content: center;
     text-transform: uppercase;
-    margin: 20px 0;
+    margin-top: 20px;
     
 }
 
-.top-list div{
+.top-list > div{
     padding: 0 5px;
     height: 30%;
+}
+
+.inner{
+    border-bottom: transparent 3px inset;
 }
 
 .top-list > div:hover .inner{
