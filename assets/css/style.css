@@ -283,8 +283,8 @@ footer{
     padding: 5px 20px 40px 20px;
 }
 
-.recently-played h2{
-    padding-bottom: 15px;
+.recently-played h2, .recently-played h3{
+    padding: 0 0 10px 10px;
 }
 
 .recently-played-albums {
@@ -304,9 +304,7 @@ footer{
 .card img{
     width: 100%;
     min-width: 80%;
-    border: 10px transparent;
-    border-left: none transparent;
-    border-style: inset;
+    padding: 10px;
 }
 
 .play-hover{
@@ -325,7 +323,7 @@ footer{
     font-size: 4vw;
 }
 
-.card figure:hover img{
+.card figure img:hover{
     transition: all 0.5s linear;
     filter: brightness(50%);
 }
@@ -336,14 +334,6 @@ footer{
 }
 
 @media screen and (max-width: 801px){
-    /* .side-menu{
-        flex-basis: 25vw;
-    }
-
-    .blue{
-        flex: 9;
-    } */
-    
     .card{
         flex-basis: calc(100% / 4);
     }
