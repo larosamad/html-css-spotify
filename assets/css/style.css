@@ -240,6 +240,11 @@ footer{
     text-transform: uppercase;
 }
 
+.upgrade button:hover{
+    transform: scale(110%);
+    transition: all 0.5s linear;
+}
+
 .top-list{
     justify-content: center;
     height: 50px;
@@ -250,6 +255,13 @@ footer{
 
 .top-list div{
     padding: 0 5px;
+    height: 30%;
+}
+
+.top-list > div:hover .inner{
+    border-bottom: lightgreen 3px inset;
+    width: 60%;
+    margin: auto;
 }
 
 .recently-played {
