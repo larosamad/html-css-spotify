@@ -21,10 +21,10 @@ body{
 
 
 .blue{
-    flex: 1;
+    flex: 6;
     background-color: #273142;
     color: white;
-    overflow: auto;
+    overflow-y: scroll;
 }
 
 
@@ -63,7 +63,8 @@ footer{
 .side-menu{
     background-color: #000000;
     color: white;
-    flex-basis: 15vh;
+    /* flex-basis: 25vh; */
+    flex: 1;
     overflow: hidden;
     justify-content:space-between;
 }
@@ -335,13 +336,13 @@ footer{
 }
 
 @media screen and (max-width: 801px){
-    .side-menu{
+    /* .side-menu{
         flex-basis: 25vw;
     }
 
     .blue{
-        flex: 1;
-    }
+        flex: 9;
+    } */
     
     .card{
         flex-basis: calc(100% / 4);
@@ -350,11 +351,11 @@ footer{
 
 @media screen and (max-width: 415px) {
     .side-menu{
-        flex-basis: 15vw;
+        flex: 2;
     }
 
     .blue{
-        flex: 1;
+        flex: 9;
     }
 
     span{
