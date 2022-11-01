@@ -21,8 +21,8 @@ body{
 
 
 .blue{
+    flex: 1;
     background-color: #273142;
-    width:83vw;
     color: white;
     overflow: auto;
 }
@@ -63,7 +63,7 @@ footer{
 .side-menu{
     background-color: #000000;
     color: white;
-    width: 17vw;
+    flex-basis: 15vh;
     overflow: hidden;
     justify-content:space-between;
 }
@@ -254,9 +254,8 @@ footer{
 
 .top-list{
     justify-content: center;
-    height: 50px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin: 20px 0;
     
 }
 
@@ -327,13 +326,13 @@ footer{
     border-radius: 50%;
 }
 
-@media screen and (max-width: 592px){
+@media screen and (max-width: 801px){
     .side-menu{
-        width: 30vh;
+        flex-basis: 25vw;
     }
 
     .blue{
-        width: 70vh;
+        flex: 1;
     }
     
     .card{
@@ -341,25 +340,14 @@ footer{
     }
 }
 
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 415px) {
     .side-menu{
-        width: 15vh;
+        flex-basis: 15vw;
     }
 
     .blue{
-        width: 85vh;
+        flex: 1;
     }
-    /* body{
-        font-size: 0.7rem;
-    }
-
-    .commands-icons i{
-        font-size: 1rem;
-    }
-
-    .commands-icons .fa-circle-play{
-        font-size: 1.5rem;
-    } */
 
     span{
         display: none;
